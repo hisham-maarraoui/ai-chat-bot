@@ -9,7 +9,7 @@ export default function Home() {
       <div className='container'>
           <div className='header'>
             <Image src="/logo.png" alt="SuperViral.ai logo" width={150} height={40} />
-            <p>Talk to <span className='special-text'>The Last</span></p>
+            <p><span className='special-text'></span></p>
           </div>
         <Chat />
       </div>
