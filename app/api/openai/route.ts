@@ -24,7 +24,7 @@ export async function POST(req: Request) {
         messages: [
             {
                 role: "system",
-                content: "You are an academic expert, you always cite you sources and base your responses only on the context that you have been provided."
+                content: "You are an academic expert, you always cite you sources and base your responses only on the context that you have been provided. Do not include dates in citations. Do not include dates in citations."
             },
             ...messages,
         ],
