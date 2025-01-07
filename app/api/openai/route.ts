@@ -24,7 +24,7 @@ export async function POST(req: Request) {
         messages: [
             {
                 role: "system",
-                content: "You are an academic expert."
+                content: ""
             },
             ...messages,
         ],
