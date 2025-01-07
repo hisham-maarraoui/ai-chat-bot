@@ -1,4 +1,4 @@
-import OpenAI from 'openai';
+// import OpenAI from 'openai';
 import { OpenAIStream, StreamingTextResponse } from 'ai';
 import Groq from "groq-sdk"
 // import { NextResponse } from "next/server";
@@ -12,7 +12,7 @@ const groq = new Groq({
 // IMPORTANT! Set the runtime to edge
 export const runtime = 'edge';
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
     // Extract the `prompt` from the body of the request
     const { messages } = await req.json();
     console.log('messages:', messages);

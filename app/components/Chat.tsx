@@ -1,6 +1,6 @@
 import { useChat } from 'ai/react'
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
+import {useRef } from 'react';
 
 
 
@@ -11,12 +11,12 @@ const Chat = () => {
 
 const chatContainer = useRef<HTMLDivElement>(null);
 
-const scroll = () => {
-  const { offsetHeight, scrollHeight, scrollTop } = chatContainer.current as HTMLDivElement
-  if (scrollHeight >= scrollTop + offsetHeight) {
-    chatContainer.current?.scrollTo(0, scrollHeight + 200 )
-  }
-}
+// const scroll = () => {
+//   const { offsetHeight, scrollHeight, scrollTop } = chatContainer.current as HTMLDivElement
+//   if (scrollHeight >= scrollTop + offsetHeight) {
+//     chatContainer.current?.scrollTo(0, scrollHeight + 200 )
+//   }
+// }
 
 
 const renderResponse = () => {
